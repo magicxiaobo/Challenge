@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index home</title>
+</head>
+<body>
+
+    <br><br>
+    <form action="/challenge/news" method="GET">
+        <em>News Feed:</em> <br>
+        Enter User Id:
+        <input type="text" name="person_id" placeholder="User Id">
+        Keyword: Search=
+        <input type="text" name="keyword" placeholder="keyword (optional)">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+    <form action="/challenge/follow" method="GET">
+        <em>Follow:</em> <br>
+        <input type="text" name="follower_person_id" placeholder="Follower Id">
+        follow:
+        <input type="text" name="person_id" placeholder="User Id">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+    <form action="/challenge/unfollow" method="GET">
+        <em>UnFollow:</em> <br>
+        <input type="text" name="follower_person_id" placeholder="Follower Id">
+        unfollow:
+        <input type="text" name="person_id" placeholder="User Id">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+    <form action="/challenge/getAllFollowers" method="GET">
+        <em>Get All user's Followers:</em>
+        <br>
+        <input type="text" name="person_id" placeholder="User Id">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+    <form action="/challenge/getAllFollowing" method="GET">
+        <em>Get All Persons the user is Following:</em>
+        <br>
+        <input type="text" name="follower_person_id" placeholder="User Id">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+    <a href="/challenge/showAllPopularPairs">Show All Popular Pairs</a>
+
+    <br><br>
+    <form action="/" method="GET">
+        <button type="submit" value="reset">reset</button>
+    </form>
+</body>
+</html>
